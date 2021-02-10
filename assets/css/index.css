@@ -268,6 +268,10 @@ table .checkbox {
   max-width: 600px;
 }
 
+.mw-auto {
+  max-width: none !important;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   /* font-family: inherit !important; */
 }
@@ -1001,11 +1005,13 @@ fieldset[disabled] .btn-danger.active {
   opacity: 1;
 }
 
-.fb_color_bg {
+.fb_color_bg,
+.facebook_color_bg {
   background: #3d5a97 !important;
 }
 
-.fb_color_text {
+.fb_color_text,
+.facebook_color_text {
   color: #3d5a97 !important;
 }
 
@@ -2350,11 +2356,12 @@ body{
 }
 
 .top-wide{
-  margin-top: 70px;
-  padding: 70px 0px 30px;
+  /* margin-top: 90px; */
+  padding: 40px 0px 0px;
   /* height: 400px; */
   position: relative;
   background-color: #000;
+  background-image: url('../img/top-wide.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2363,13 +2370,29 @@ body{
 
 .top-wide h2{
   color: #fff;
+  margin-bottom: 0px;
 }
 
 .section-header{
-  max-width: 800px;
+  /* max-width: 800px; */
+  padding-top: 60px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: auto;
   margin-right: auto;
+  background: rgba(0,0,0,0.8);
   /* margin-bottom: 30px; */
+  overflow: hidden;
+}
+
+.top-wide .section-header p{
+  font-size: 14px;
+  font-weight: bold;
+  /* color: #fff !important; */
+  /* text-decoration: underline !important; */
 }
 
 .top-wide .section-header p a[href]:hover{
@@ -2387,11 +2410,6 @@ body{
 
 .overlay-000 .section-header{
   /* background-color: rgba(0,0,0,0.8) !important; */
-}
-
-.top-wide .section-header{
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .overlay-absolute{
